@@ -3,7 +3,7 @@
 function main() {
   var image = new Image();
   image.src =
-    'https://mp4.texiao6.com/ZFpRrIbbSgkBvcWwTYYKfTP3S40%3D%2FlkyvxSqICn7LXt927lS63dfGcOJU'; // MUST BE SAME DOMAIN!!!
+    'https://mp4.texiao6.com/ZFpRrIbbSgkBvcWwTYYKfTP3S40%3D%2FloaqSn003wZeXpGT118QxmMiXijl'; // MUST BE SAME DOMAIN!!!
   image.crossOrigin = 'annoymous';
   image.onload = function () {
     render(image);
@@ -20,8 +20,8 @@ function render(image) {
   }
 
   // setup GLSL program
-  gl.enable(gl.BLEND);
-  gl.blendFunc(gl.ONE, gl.ONE_MINUS_SRC_ALPHA);
+  // gl.enable(gl.BLEND);
+  // gl.blendFunc(gl.ONE, gl.ONE_MINUS_SRC_ALPHA);
   var program = webglUtils.createProgramFromScripts(gl, [
     'vertex-shader-2d',
     'fragment-shader-2d',
