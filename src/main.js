@@ -14,7 +14,9 @@ function render(image) {
   // Get A WebGL context
   /** @type {HTMLCanvasElement} */
   var canvas = document.querySelector('#canvas');
-  var gl = canvas.getContext('webgl');
+  var gl = canvas.getContext('webgl', {
+    antialias: true,
+  });
   if (!gl) {
     return;
   }

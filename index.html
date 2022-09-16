@@ -97,14 +97,10 @@
 
        float h = RGBtoHSL(renderImage.rgb).r *1.0;
        float th = RGBtoHSL(vec3(rTarget, gTarget, bTarget)).r *1.0;
-       float hslOffset = 0.05;
+       float hslOffset = 0.03;
        if(isSpecificValue(h,th,hslOffset)){
         discard;
       }
-
-       //if(renderImage.g >= 0.1){
-       //  discard;
-       //}
 
        gl_FragColor = renderImage;
      }
